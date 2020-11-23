@@ -1,0 +1,95 @@
+BOT_CONFIG = {
+    'intents': {
+        
+        'axapta': {
+            'input': ['аксапта', 'axapta', 'ax2009', 'ах2009', 'mdax', 'Microsoft Dynamics AX2009', 'axbtq'],
+            'responses': ['Аксапта бутики и Аксапта фарфор - Поддержка Axapta Бутики BTQ_support@Mercury.ru, Аксапта ЦУМ - ЦУМ Отдел ИС tsum-is@tsum.ru тел.3666, Ювелирная аксапта - jewerly_support@Mercury.ru  тел.5717',]
+        },
+        'Инструкция': {
+             'input': ['Инструкция', 'мануал', 'manual'],
+             'responses': ['Основные инструкции находятся по пути: O:\_Арка\!Инструкции'],
+        },
+        'ax_tsum': {
+            'input': ['ax tsum', 'аксапта цум', 'axtsum', 'axapta tsum', 'axatpa цум'],
+            'responses': ['Аксапта ЦУМ - Инструкция по установке: \\mercury.ru\dfsdistrib\Business Applications\Common-Applications\_Инструкции для техотделов\Актуальные\Mercury\Инструкция по установке клиента Microsoft Dynamic AX 2009 ЦУМ.pdf, по доступу обращаться в ЦУМ Отдел ИС <tsum-is@tsum.ru> тел.3666'],
+        },
+        'ax_btq': {
+            'input': ['ax btq', 'аксапта бутики', 'ax бутики', 'axapta одёжная', 'axatpa бутиковая','аксапта одёжная'],
+            'responses': ['Аксапта бутики - публикуется в citrix, по доступу обращаться в BTQ_support@Mercury.ru'],
+        },
+        'test': {
+            'input': ['тест',],
+            'responses':['<a href="https://example.com">This is an example</a>'],
+        },
+        'authorization': {
+            'input': ['Авторизация'],
+            'responses':['Авторизация. Ярлык - \\mercury.ru\dfsdistrib\CommonPrograms\D-Soft\Fin_request\Авторизация.exe, по доступу к Дьяконову Петру'],
+            },
+
+        'BO': {
+        'input' : ['Бюджетный оператор', 'БО'],
+        'responses' : ['Бюджетный оператор. Ярлык - \\mercury.ru\dfsdistrib\CommonPrograms\D-Soft\Fin_request\Бюджетный оператор.exe, Доступы выдает “Отдел бюджетирования”'],
+        },
+        
+        'BK': {
+            'input' : ['Бюджетный контроль'],
+            'responses' : ['Бюджетный контроль. Ярлык - \\mercury.ru\dfsdistrib\CommonPrograms\OPD\BudgetControl\Бюджетный контроль.exe, по доступу к Дьяконову Петру'],
+        },
+
+        'PR': {
+            'input' : ['PR','Программа PR',],
+            'responses' : ['Программа PR. Ярлык - \\mercury.ru\dfsdistrib\CommonPrograms\D-Soft\pr_rub.exe. По доступу к Дьяконову Петру'],
+        },
+
+        'PLU': {
+            'input' : ['Остатки', 'Остатки PLU', 'Остатки ЦУМ', 'Остатки товаров', 'plu'],
+            'responses' : ['Остатки, история PLU. Ярлык - \\file-arka\Arka-Distr\Data_base\Axapta\Остатки, история PLU, так же публикуется в citrix. Остатки ЦУМ. Ярлык - \\file-arka\Arka-Distr\Data_base\Axapta\Остатки, история PLU ЦУМ. Доступ есть у всех.'],
+            },
+
+        'VS': {
+            'input' : ['Visual Studio 2015', 'Visual Studio', 'VS'],
+            'responses' : ['Visual Studio 2015. Путь: \\file-arka\Arka-Distr\Office_Programs\Visual Studio 2015, ключ ищи в пункте 16 O:\_Арка\!Инструкции\1.Бизнес ПО\1.Бизнес программы.docx'],
+        },
+
+        'TeleMarkt': {
+            'input' : ['TeleMarkt', 'Телемаркет'],
+            'responses' : ['Телемаркет. Ярлык - \\mercury.ru\dfsdistrib\CommonPrograms\D-Soft\TeleMarkt\TeleMarkt.exe, По доступу к Дьяконову Петру'],
+        },
+        
+         'Redmine': {
+            'input' : ['Redmine', 'редмайн'],
+            'responses' : ['Redmine — открытое серверное веб-приложение для управления проектами и задачами. Уточнить уровень доступа (аналогично какому пользователю), согласовать с руководителем, переслать в ОБП.'],
+        }, 
+
+        'ViewArrival': {
+            'input' : ['ViewArrival'],
+            'responses' : ['ViewArrival устанавливает Тимофеев Евгений, отправлять юзеров к нему. \\file-arka\DFSDistrib\CommonPrograms\OPD\ViewArrival.exe'],
+        },
+
+        'Power Bi': {
+            'input' : ['Power Bi', 'отчеты Power Bi'],
+            'responses' : ['Отчеты Power Bi. У нас в холдинге два Портала PowerBI:\
+            1.http://powerbi-vdi/reports/browse/ - зона ответственности Отдела Аналитических Систем (analytical_systems@Mercury.ru); \
+            Согласовать доступ с руковдителем, направить запрос в ОБП.\
+                    Для доступа к отчетам с рабочего компьютера используйте ссылку: http://powerbi-vdi/reports/browse/Current.\
+                Для доступа с мобильного телефона Apple (в андроид есть аналогичное):\
+            Установите приложение PowerBI от Microsoft: power-bi. Запустите приложение и выберите Подключение к серверу отчетов.Введите название (например, «Current Net Sales») и укажите адрес сервера https://pbirs.mhpost.ru/Reports. В качестве логина используйте TPolkhovskaya и пароль для входа на компьютер \ 2.http://olaphr-tsum/Reports/browse/ - зона ответственности Митина Владимира (VMitin@tsum.ru).'],
+        },
+            
+        
+    },
+     'failure_phrases':  [
+        'Непонятно, сформилируй точнее',
+        'Сори, я всего лишь бот :(',
+        'Noch einmal!',
+        'У тебя последняя попытка...',
+        'Чо?',
+        'непонел'
+    ]
+}
+
+     'PR': {
+            'input' : ['PR'],
+            'responses' : [''],
+        },
+ 
